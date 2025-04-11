@@ -1,0 +1,74 @@
+<style>
+  body {
+    background-color: rgb(104, 2, 104);
+    color : rgb(0, 0, 0); 
+  }
+
+  h1 {
+    display: block;
+    margin: 70px 0 10px 602px;
+    color: white;
+    font-weight: bolder;
+  }
+
+  .peratext {
+    width: 520px;
+    height: 360px;
+    display: inline-block;
+    margin: 70px 60px 0 166px;
+    font-size: medium;
+    color: black;
+    background-color: rgb(244, 148, 220);
+    border-radius: 3%;
+    text-align: center;
+    border: solid black;
+  }
+
+  form {
+    width: 598px;
+    float: right;
+    margin: 0 50px 200px 0;
+    padding: 20px;
+  }
+
+  textarea {
+    display: inline-block;
+    margin:49px 0 0 0;
+    padding:25px;
+    height: 360px;
+    font-size: medium;
+    width: 520px;
+    border-radius:3% ;
+    border: solid black;
+    background-color: rgb(244, 148, 220);
+    color: black;
+
+  }
+  button{
+    float: right;
+    width: 100px;
+    margin: 58px 626px 0 0;
+    font-size: larger;
+    background-color: rgb(8, 157, 42);
+    border-radius: 10%;
+    border: solid black;
+    
+  }
+</style>
+<body>
+
+  <h1>Typing Speed Test....</h1>
+
+  <div class="peratext">
+    <p>{{ test_text }}</p>
+  </div>
+
+  <form method="post">
+    {% csrf_token %}
+    <input type="hidden" name="original_text" value="{{ test_text }}">
+    <input type="hidden" name="start_time" value="{{ start_time }}">
+    <textarea  placeholder="Enter Your Text..." name="user_input" rows="6" cols="80"></textarea><br>
+    <button type="submit">Submit</button>
+  </form>
+  
+</body>

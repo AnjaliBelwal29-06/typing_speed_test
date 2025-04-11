@@ -1,0 +1,44 @@
+<style>
+    *{
+       margin: 0;
+       padding: 0;
+    }
+
+    body {
+        background-color: black;
+        color: white;
+    }
+
+    h1{
+        margin: 70px 0 10px 660px;
+        
+    }
+
+    .peragraphs {
+        width: 500px;
+        float: right;
+        margin: 68px 505px 0 0;
+        height: auto;
+        text-align: center;
+        size: 100px;
+        font-weight: bolder;
+        font-size: xx-large;
+        padding: 10px;
+        background-color: antiquewhite;
+        color: black;
+        border-radius: 5%;
+        border: solid red;
+    }
+</style>
+
+<body>
+
+    <h1><big>Your Result...</big></h1>
+    <div class="peragraphs">
+
+        <p><strong>Speed:</strong> {{ speed }} w/sec</p><br>
+        <p><strong>Errors:</strong> {{ errors }}</p><br>
+        <p><strong>Your Input:</strong></p><br>
+        <p style="font-size: small;">{{ user_input }}</p>
+    </div>
+</body>
