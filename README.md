@@ -15,4 +15,4 @@ It allows users to test their typing speed and accuracy in real-time.
 - HTML, CSS
 - 
 ## Screenshot
-![Typing Test Demo](screenshots/typing_test_demo.png)
+![Typing Test Demo](screenshots/typingspeed1.png)
